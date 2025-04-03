@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Countdown</title>
+    <script src="timer.js"></script>
+</head>
+<body>
+    <h1>Tournament Starts In:</h1>
+    <h2 id="countdown"></h2>
+
+    <h2>Registered Players:</h2>
+    <ul id="playerList"></ul>
+
+    <script>
+        // Show registered players
+        let playerList = document.getElementById("playerList");
+        for (let i = 0; i < localStorage.length; i++) {
+            let uid = localStorage.key(i);
+            let slot = localStorage.getItem(uid);
+            let listItem = document.createElement("li");
+            listItem.textContent = `UID: ${uid} - Slot: ${slot}`;
+            playerList.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>
