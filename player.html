@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Player Dashboard</h2>
+        <div id="timer"></div>
+        <h3>Register & Get Slot</h3>
+        <form onsubmit="registerPlayer(); return false;">
+            <input type="text" id="pName" placeholder="Name">
+            <input type="email" id="pEmail" placeholder="Email">
+            <input type="text" id="pUID" placeholder="Free Fire UID">
+            <button type="submit">Register</button>
+        </form>
+        <h3>Your Slot: <span id="slotNumber">-</span></h3>
+        <h3>Leaderboard</h3>
+        <div id="leaderboard">No data</div>
+    </div>
+    <script src="player.js"></script>
+</body>
+</html>
