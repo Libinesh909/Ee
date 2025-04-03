@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - GRK Tournament</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Panel</h2>
+        <h3>Set Tournament Timer</h3>
+        <input type="datetime-local" id="tournamentTime">
+        <button onclick="setTimer()">Start Timer</button>
+        <h3>Leaderboard</h3>
+        <textarea id="leaderboard" rows="5"></textarea>
+        <button onclick="updateLeaderboard()">Update</button>
+        <h3>Payments</h3>
+        <button onclick="settlePayments()">Settle All Payments</button>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
