@@ -1,0 +1,4 @@
+body { font-family: Arial; text-align: center; background-color: #121212; color: white; padding: 20px; }
+.container { max-width: 600px; margin: auto; padding: 20px; background: #333; border-radius: 10px; }
+input, button, select, textarea { width: 80%; padding: 10px; margin: 5px; }
+#timer { font-size: 20px; color: yellow; margin: 10px; }
